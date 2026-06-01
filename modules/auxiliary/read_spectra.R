@@ -123,6 +123,7 @@ apply_sig <- function(path) {
   
   # Range
   range_spectra <- range(spectra$wv)
+  range_spectra <- c(ceiling(range_spectra[1]), floor(range_spectra[2]))
   diff_range <- range_spectra[2] - range_spectra[1]
   
   if(diff_range == (nrow(spectra)-1)) {
@@ -136,10 +137,10 @@ apply_sig <- function(path) {
                                        y = spectra$reflectance,
                                        spar= 0.01)
     
-    spectra_smoothed <- predict(resample_function, round(range_spectra[1]:range_spectra[2]))$y
+    spectra_smoothed <- predict(resample_function, range_spectra[1]:range_spectra[2])$y
     
     # Out
-    return(list(range = round(range_spectra),
+    return(list(range = range_spectra,
                 spectra = spectra_smoothed))
     
   }

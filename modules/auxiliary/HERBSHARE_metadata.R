@@ -17,6 +17,8 @@ source("modules/auxiliary/read_spectra.R")
 #-------------------------------------------------------------------------------
 #'@Compile-file-metadata
 
+#' Combine metadata files from different digitization projects
+
 read_metadata <- function(folder, pattern = "\\.csv$") {
   
   files <- list.files(folder, pattern = pattern, full.names = TRUE)
@@ -50,10 +52,12 @@ IHerbSpec_metadata[IHerbSpec_metadata == ""] <- NA
 fwrite(IHerbSpec_metadata, "data/01-spectra/IHerbSpec_metadata.csv")
 
 # Total
-# - 7560
+# - 10751
 
 #-------------------------------------------------------------------------------
 #'@GBIF-records-search
+
+#' Get GIBF information of specimens by pairing specimenID
 
 # Read IHerbSpec metadata
 IHerbSpec_metadata <- fread("data/01-spectra/IHerbSpec_metadata.csv")
