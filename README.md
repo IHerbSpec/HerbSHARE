@@ -1,8 +1,8 @@
-# HERBSHARE
+# HerbSHARE
 
 <div align="center">
 
-**HERBarium Spectral Hub for Advancing Research and Exploration**
+**Herbarium Spectral Hub for Advancing Research and Exploration**
 
 <a href="https://doi.org/10.5281/zenodo.20278893"><img src="https://zenodo.org/badge/1016310857.svg" alt="DOI"></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -14,23 +14,23 @@
 
 ## Summary
 
-**HERBSHARE** — HERBarium Spectral Hub for Advancing Research and Exploration — is an interactive web application designed to advance the next generation of herbarium specimen digitization through reflectance spectroscopy. The application provides a user-friendly interface for taxonomists, botanists, and ecologists to:
+**HerbSHARE** — Herbarium Spectral Hub for Advancing Research and Exploration — is an interactive web application designed to advance the next generation of herbarium specimen digitization through reflectance spectroscopy. The application provides a user-friendly interface for taxonomists, botanists, and ecologists to:
 
 - **Explore** the IHerbSpec database of herbarium spectral records through an interactive map, filter specimens by taxonomy, geography, and collection metadata, and visualize individual spectra and specimen images
 - **Predict** leaf functional traits from uploaded spectral reflectance data using an universal deep-learning model trained and validated on herbarium spectra
 
-HERBSHARE bridges the gap between large herbarium collections and practical spectral analysis, making trait estimation from museum specimens accessible without extensive programming knowledge.
+HerbSHARE bridges the gap between large herbarium collections and practical spectral analysis, making trait estimation from museum specimens accessible without extensive programming knowledge.
 
 ---
 
 ## Repository Description
 
-This repository contains the complete source code for the HERBSHARE application organized into modular components:
+This repository contains the complete source code for the HerbSHARE application organized into modular components:
 
 ### Project Structure
 
 ```
-HERBSHARE/
+HerbSHARE/
 ├── app.R                           # Main application file
 ├── modules/                        # Application modules
 │   ├── explorer_panel.R            # Explorer panel (UI + server)
@@ -111,15 +111,15 @@ All required Python packages and their pinned versions are listed in [`requireme
 
 If you use HERBSHARE in your research, please cite:
 
-Guzmán J.A., White D., and Cavender-Bares J. (2026). *HERBSHARE: HERBarium Spectral Hub for Advancing Research and Exploration*. Zenodo. https://doi.org/10.5281/zenodo.20278894
+Guzmán J.A., White D., and Cavender-Bares J. (2026). *HerbSHARE: Herbarium Spectral Hub for Advancing Research and Exploration*. Zenodo. https://doi.org/10.5281/zenodo.20278894
 
 ### BibTeX Entry
 
 ```bibtex
 
-@software{HERBSHARE,
+@software{HerbSHARE,
   author = {Guzmán J.A., White D., and Cavender-Bares J.},
-  title = {HERBSHARE: HERBarium Spectral Hub for Advancing Research and Exploration},
+  title = {HerbSHARE: Herbarium Spectral Hub for Advancing Research and Exploration},
   year = {2026},
   version = {v0.1-beta},
   publisher = {Zenodo},
@@ -159,7 +159,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## Acknowledgements
 
-The development of **HERBSHARE** is supported/funded by:
+The development of **HerbSHARE** is supported/funded by:
 
 <div align="center">
 
